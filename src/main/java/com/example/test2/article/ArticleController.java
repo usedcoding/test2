@@ -25,7 +25,7 @@ public class ArticleController {
     }
 
     @PostMapping("/article/create/{id}")
-    public String create(Model model,@PathVariable Integer id, @RequestParam String subject,@RequestParam String content) {
+    public String create(Model model, @PathVariable Integer id, @RequestParam String subject,@RequestParam String content) {
         this.articleService.getSave(subject, content);
         return"redirect:/article/list";
     }

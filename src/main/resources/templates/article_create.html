@@ -1,4 +1,4 @@
-<form th:action="/answer/create/{id}" method="post">
+<form th:action=@{|/article/create/${article.id}|}" method="post">
     <div>
         <textarea name="subject" id="subject" rows="3"></textarea>
     </div>
